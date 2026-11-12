@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-test:
-    runs-on: ubuntu-latest # 向 GitHub 租一台干净的 Linux 机器跑测试
+    runs-on: ubuntu-24.04 # 向 GitHub 租一台干净的 Linux 机器跑测试
 
     steps:
     # 步骤 1：CI 的拉取代码
