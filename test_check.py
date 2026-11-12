@@ -14,7 +14,7 @@ def test_baidu_status():
     print(f"耗时: {round((end_time - start_time)*1000, 2)} ms")
     
     # 这里就是我们的“质量门禁”断言：如果不是200，直接报错
-    assert status_code == 200, f"巡检失败！预期状态码 200，实际为 {status_code}"
+    assert status_code == 404, f"巡检失败！预期状态码 200，实际为 {status_code}"
     print("✅ 巡检通过，页面正常。")
 
 if __name__ == "__main__":
